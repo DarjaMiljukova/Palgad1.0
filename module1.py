@@ -128,7 +128,7 @@ def top3(i:list,p:list):
     palk=max(p)
     ind=p.index(palk)
     nimi=i[ind]
-    de
+    
     return palk,nimi
 
 def gug(i:list,p:list):
