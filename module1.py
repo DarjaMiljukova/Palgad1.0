@@ -99,3 +99,43 @@ def Vordses_palgad(i:list,p:list):
             k=p.index(palk,k+1)#---------
             nimi=i[k]
             print(nimi)
+    return i,p
+
+def Otsitakse_nime_järgi(i:list,p:list):
+    """
+    :param list i:Inimeste järjend
+    :param list p: Palgade järjend
+    :rtype: int, str
+    """
+
+    return i,p
+
+def Rohkem_vähem(i:list,p:list):
+    """
+    :param list i:Inimeste järjend
+    :param list p: Palgade järjend
+    :rtype: int, str
+    """
+
+    return i,p
+
+def top3(i:list,p:list):
+    """
+    :param list i:Inimeste järjend
+    :param list p: Palgade järjend
+    :rtype: int, str
+    """
+    palk=max(p)
+    ind=p.index(palk)
+    nimi=i[ind]
+    de
+    return palk,nimi
+
+def gug(i:list,p:list):
+    """
+    :param list i:Inimeste järjend
+    :param list p: Palgade järjend
+    :rtype: int, str
+    """
+
+    return i,p
