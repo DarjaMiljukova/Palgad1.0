@@ -123,3 +123,13 @@ def Kustuta(i:list,p:list):
                 p.remove(palk)
                 i.pop(ind)
     return i,p
+
+def sort_a_b(i:list,p:list):
+    """
+    :param list i:Inimeste järjend
+    :param list p: Palgade järjend
+    :rtype: int, str
+    """
+    data = ['Elle', 'Miles', 'Kratos', 'Joel', 'Peter', 'Nathan']
+
+    print(sorted(data))
