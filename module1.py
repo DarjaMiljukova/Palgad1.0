@@ -101,41 +101,22 @@ def Vordses_palgad(i:list,p:list):
             print(nimi)
     return i,p
 
-def Otsitakse_nime_järgi(i:list,p:list):
+def Kustuta(i:list,p:list):
     """
-    :param list i:Inimeste järjend
-    :param list p: Palgade järjend
-    :rtype: int, str
     """
-
-    return i,p
-
-def Rohkem_vähem(i:list,p:list):
-    """
-    :param list i:Inimeste järjend
-    :param list p: Palgade järjend
-    :rtype: int, str
-    """
-
-    return i,p
-
-def top3(i:list,p:list):
-    """
-    :param list i:Inimeste järjend
-    :param list p: Palgade järjend
-    :rtype: int, str
-    """
-    palk=max(p)
-    ind=p.index(palk)
-    nimi=i[ind]
-    
-    return palk,nimi
-
-def gug(i:list,p:list):
-    """
-    :param list i:Inimeste järjend
-    :param list p: Palgade järjend
-    :rtype: int, str
-    """
-
+    kesk_palk=sum(p)/len(p)
+    print(kesk_palk)
+    v=int(input("palk 1-suurem,2-väiksem? "))
+    if v==1:
+        for palk in p:
+            if palk>kesk_palk:
+                ind=p.index(palk)
+                p.remove(palk)
+                i.pop(ind)
+    else:
+        for palk in p:
+            if palk<kesk_palk:
+                ind=p.index(palk)
+                p.remove(palk)
+                i.pop(ind)
     return i,p

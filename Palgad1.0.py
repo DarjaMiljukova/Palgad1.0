@@ -5,7 +5,7 @@ inimesed=["A","B","C","D","A"]
 while True:
     print(inimesed)
     print(palgad)
-    menu=int(input("Valik:\n 1-Lisa andmed\n 2-Kustuta andmed\n 3-Suurim palk\n 4-Väiksem palk\n 5-Sort\n 6-Vordses palgad"))
+    menu=int(input("Valik:\n 1-Lisa andmed\n 2-Kustuta andmed\n 3-Suurim palk\n 4-Väiksem palk\n 5-Sort\n 6-Vordses palgad\n 7-Kustuta "))
     if menu==0:
         break
     elif menu==1:
@@ -26,3 +26,6 @@ while True:
         inimesed,palgad=Vordses_palgad(inimesed,palgad)
         print(inimesed)
         print(palgad)
+    elif menu==7:
+        inimesed,palgad=Kustuta(inimesed,palgad)
+        print(inimesed,palgad)
