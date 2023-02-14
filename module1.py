@@ -103,6 +103,9 @@ def Vordses_palgad(i:list,p:list):
 
 def Kustuta(i:list,p:list):
     """
+    :param list i:Inimeste järjend
+    :param list p: Palgade järjend
+    :rtype: int, str
     """
     kesk_palk=sum(p)/len(p)
     print(kesk_palk)
