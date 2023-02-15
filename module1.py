@@ -203,12 +203,12 @@ def tulumaks():
 def nimes(i:list,p:list):
     """
     """
-    nimi=input("kelle tahad leida")
+    nimi=input("Kelle tahad leida?  ")
     while nimi not in i:
-        nimi=input("palun kirjuta õige nimi")
+        nimi=input("Palun kirjuta õige nimi")
         n=i.count(nimi)
     if n!=1:
-        print(f"siin on mõned inimesed kes nimi on {nimi}")
+        print(f"Siin on mõned inimesed kes nimi on {nimi}")
         kopia=i.copy()
         for i in range(n):
             ind=kopia.index(nimi)
